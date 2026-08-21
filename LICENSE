@@ -1,0 +1,46 @@
+SpaceCatalog data releases — licence
+====================================
+
+This repository distributes data compiled from published astronomical
+catalogues. It is not under a single licence, and no statement here
+can replace the terms of the upstream a given row came from.
+
+Every row in objects.csv names its upstream in the `source` column, and
+sources.csv in the same release gives that upstream's terms. Those
+terms govern the row. The set for this release:
+
+  CC BY 4.0 (VizieR)
+      gcvs, wds
+  CC BY 4.0 (VizieR); see each catalogue's own reference
+      deepsky_distances
+  CC BY-SA 3.0 IGO
+      gaia_dr3, gaia_dr3_sky
+  CC-BY-4.0
+      curated
+  CC-BY-SA-4.0
+      hyg, openngc
+  CC0 1.0
+      wikidata
+  IAU Minor Planet Center; free to use with attribution
+      mpc
+  ODbL
+      simbad
+  Public domain (NASA)
+      exoplanet_archive
+  Public domain (NASA/JPL)
+      jpl_sats, jpl_sbdb
+  VizieR terms; cite Dalya+ 2022 (2022MNRAS.514.1403D)
+      glade_plus, glade_plus_sky
+
+Share-alike terms in that set reach anything derived from the rows
+they cover. If you redistribute a subset, check which upstreams it
+drew from rather than which licence this file mentions first.
+
+Attribution
+-----------
+
+Cite the release. Citing the release does not discharge the upstream
+attribution: see https://spacecatalog.org/releases for both, with a worked example.
+
+The pipeline that produced these files is separate from the data and
+is licensed Apache-2.0.

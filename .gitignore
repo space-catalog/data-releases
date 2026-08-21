@@ -1,0 +1,6 @@
+# Release artifacts live on the GitHub release, not in the tree: they are tens
+# of megabytes of gzipped CSV, they never change once published, and a git
+# history of them would carry every past release forever.
+*.csv
+*.csv.gz
+*.tar.gz
