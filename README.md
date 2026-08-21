@@ -24,10 +24,10 @@ What each release contains, and how to cite it: https://spacecatalog.org/release
 | `spacecatalog-dr1-objects.csv.gz` | 27,573,650 | `630ba7ae703659f0c4fe67480d11dd1f2c7eafd89bb2443361d68d9e91321398` |
 | `spacecatalog-dr1-designations.csv.gz` | 3,531,501 | `1ea90d8d329d8b5b03f84fa15846a9ca2ecada5825dfd984fd0bc156b17114e6` |
 | `spacecatalog-dr1-relations.csv.gz` | 37,530 | `b2e41ea6a22427a53abb7e7b09cb4bd875892ac5302e2e233e4dfd2a0e6382ff` |
-| `spacecatalog-dr1-sources.csv` | 2,539 | `c1c59b3550ad21abd57877a96269c45576a066a6e8a8412a2070906f374d9bd8` |
+| `spacecatalog-dr1-sources.csv` | 2,496 | `8f9c4d6441d1ed5c3ba38c35164ae275726167b3609df8e7eb2a1732dcb57ea4` |
 | `spacecatalog-dr1-source_disagreements.csv` | 8,628 | `af601cb342ef877bde356bcc2ffff35dda5d0197f8167188482b3f6fd9e4b71b` |
 | `LICENSE` | 11,357 | `c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4` |
-| `RELEASE.md` | 4,107 | `401cbc4c074e9904cdc225fee1095f8ef5620f1575f59732b53f5549396fd66e` |
+| `RELEASE.md` | 2,993 | `44e3ae9ce537c5dbc7df1859b20f27ab6bb63b61ca561e6c05bdb100f8a04859` |
 
 `spacecatalog-<release>.tar.gz` holds every one of those files plus
 `manifest.json`, which states the row totals per category, the
