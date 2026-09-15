@@ -65,8 +65,27 @@ bodies. `properties` is JSON, with published uncertainties under
 catalogue saying a published figure cannot be right — quote it if you
 quote the number.
 
+A column-by-column dictionary of all five files, including every key
+the `properties` JSON can carry, is at https://spacecatalog.org/download.
+
 ## Licence
 
-The data is not under a single licence. See `LICENSE`, and
-`sources.csv` inside each release for the terms of every upstream row
-by row.
+The data is not under a single licence. `LICENSE` gives the terms of
+every upstream as its producer states them. DR1's own files record some
+upstreams' terms differently from how their producers state them, and
+were not changed, because their checksums are what a citation of DR1
+points at; `LICENSE` lists every place they differ.
+
+SpaceCatalog is a non-commercial project: nothing on it is sold, and it
+carries no advertising and no sponsorship. Some of the catalogues in
+this release allow no commercial use without the producer's permission:
+Deep-sky distances: Cantat-Gaudin+ 2020, Harris 2010, Stanghellini+ 2008
+(via VizieR); GLADE+ (Galaxy List for the Advanced Detector Era); GLADE+
+(every row, as survey sources); Gaia DR3 (sources brighter than G = 15);
+Gaia DR3 astrophysical parameters (GSP-Phot and FLAME); General
+Catalogue of Variable Stars (Samus+ 2017, via VizieR); Washington Double
+Star Catalog (Mason+ 2001-, via VizieR). Their terms travel with their
+rows into anything built from them, so commercial reuse of their rows
+needs the producer's permission.
+
+Gaia DR3 is CC BY-NC 3.0 IGO (https://creativecommons.org/licenses/by-nc/3.0/igo/): non-commercial use only, and commercial use needs ESA's prior authorisation. In this release it covers the stellar parameters on any star whose `properties` carries a `stellar_parameters_method` naming Gaia DR3: the model fits among `surface_temperature_k`, `surface_gravity_log_g`, `radius_solar`, `mass_solar`, `bolometric_luminosity_solar`, `age_years`, whatever that row's `source` column says. Gaia fills only a key no other catalogue had already supplied. Credit ESA/Gaia/DPAC. This work has made use of data from the European Space Agency (ESA) mission Gaia (https://www.cosmos.esa.int/gaia), processed by the Gaia Data Processing and Analysis Consortium (DPAC, https://www.cosmos.esa.int/web/gaia/dpac/consortium). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the Gaia Multilateral Agreement. Cite Gaia Collaboration 2016, A&A 595, A1 (2016A&A...595A...1G) and Gaia Collaboration 2023, A&A 674, A1 (2023A&A...674A...1G).

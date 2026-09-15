@@ -6,41 +6,77 @@ catalogues. It is not under a single licence, and no statement here
 can replace the terms of the upstream a given row came from.
 
 Every row in objects.csv names its upstream in the `source` column, and
-sources.csv in the same release gives that upstream's terms. Those
-terms govern the row. The set for this release:
+the terms that upstream's producer states are listed below. Those terms
+govern the row. The set for this release:
 
-  CC BY 4.0 (VizieR)
-      gcvs, wds
-  CC BY 4.0 (VizieR); see each catalogue's own reference
-      deepsky_distances
-  CC BY-SA 3.0 IGO
-      gaia_dr3, gaia_dr3_sky
-  CC-BY-4.0
-      curated
-  CC-BY-SA-4.0
-      hyg, openngc
-  CC0 1.0
-      wikidata
-  IAU Minor Planet Center; free to use with attribution
-      mpc
-  ODbL
-      simbad
-  Public domain (NASA)
-      exoplanet_archive
-  Public domain (NASA/JPL)
-      jpl_sats, jpl_sbdb
-  VizieR terms; cite Dalya+ 2022 (2022MNRAS.514.1403D)
-      glade_plus, glade_plus_sky
+- Deep-sky distances: Cantat-Gaudin+ 2020, Harris 2010, Stanghellini+ 2008 (via VizieR): Per table: Hunt & Reffert 2024 (J/A+A/686/A42) and Cantat-Gaudin+ 2020 (J/A+A/633/A99, retired): no licence stated, VizieR terms for A&A tables (free for scientific use); Baumgardt & Vasiliev 2021 (arXiv:2105.09526v2): CC BY 4.0; Stanghellini+ 2008 (J/ApJ/689/194): CC BY-NC-ND 4.0, per CDS's terms for AAS tables; Harris 1996, rev. 1997 (VII/202, retired): no licence stated, VizieR terms
+- GLADE+ (Galaxy List for the Advanced Detector Era): VizieR terms; cite Dalya+ 2022 (2022MNRAS.514.1403D)
+- GLADE+ (every row, as survey sources): VizieR terms; cite Dalya+ 2022 (2022MNRAS.514.1403D)
+- Gaia DR3 (sources brighter than G = 15): CC BY-NC 3.0 IGO
+- Gaia DR3 astrophysical parameters (GSP-Phot and FLAME): CC BY-NC 3.0 IGO
+- General Catalogue of Variable Stars (Samus+ 2017, via VizieR): No licence stated; VizieR terms (free for scientific use)
+- HYG Database v4.1: CC-BY-SA-4.0
+- JPL Planetary Satellite Data: No licence stated; citation requested
+- JPL Small-Body Database: No licence stated; citation requested
+- Minor Planet Center — discovery circumstances of the numbered minor planets: Freely available; may be redistributed as long as the source for the data is clearly specified (IAU Minor Planet Center)
+- NASA Exoplanet Archive (Planetary Systems Composite Parameters): No licence stated; acknowledgement requested
+- OpenNGC: CC-BY-SA-4.0
+- SIMBAD spectral classifications: ODbL
+- SpaceCatalog curated data: CC-BY-4.0
+- Washington Double Star Catalog (Mason+ 2001-, via VizieR): No licence stated; acknowledgement requested
+- Wikidata: CC0 1.0
 
-Share-alike terms in that set reach anything derived from the rows
-they cover. If you redistribute a subset, check which upstreams it
-drew from rather than which licence this file mentions first.
+SpaceCatalog is a non-commercial project: nothing on it is sold, and it carries no advertising and no sponsorship. Some of the catalogues in this release allow no commercial use without the producer's permission: Deep-sky distances: Cantat-Gaudin+ 2020, Harris 2010, Stanghellini+ 2008 (via VizieR); GLADE+ (Galaxy List for the Advanced Detector Era); GLADE+ (every row, as survey sources); Gaia DR3 (sources brighter than G = 15); Gaia DR3 astrophysical parameters (GSP-Phot and FLAME); General Catalogue of Variable Stars (Samus+ 2017, via VizieR); Washington Double Star Catalog (Mason+ 2001-, via VizieR). Their terms travel with their rows into anything built from them, so commercial reuse of their rows needs the producer's permission.
+
+Several producers state no licence and ask instead for an acknowledgement or a citation; that is what their terms above say, and it is not a licence this release grants on their behalf. The acknowledgements below give each producer's requested acknowledgement, word for word where the producer publishes one. Citing this release does not discharge it.
+
+The share-alike terms (CC BY-SA 4.0, and the Open Database License on the SIMBAD-derived fields) reach anything derived from the rows they cover: fields derived from them stay under the same terms, and a database derived from the SIMBAD fields stays under the Open Database License. The Stanghellini, Shaw & Villaver (2008) planetary-nebula distances are CC BY-NC-ND 4.0, under CDS's terms for tables from the AAS journals: non-commercial use only, and the published values may not be altered.
+
+Gaia DR3 is CC BY-NC 3.0 IGO (https://creativecommons.org/licenses/by-nc/3.0/igo/): non-commercial use only, and commercial use needs ESA's prior authorisation. In this release it covers the stellar parameters on any star whose `properties` carries a `stellar_parameters_method` naming Gaia DR3: the model fits among `surface_temperature_k`, `surface_gravity_log_g`, `radius_solar`, `mass_solar`, `bolometric_luminosity_solar`, `age_years`, whatever that row's `source` column says. Gaia fills only a key no other catalogue had already supplied. Credit ESA/Gaia/DPAC. This work has made use of data from the European Space Agency (ESA) mission Gaia (https://www.cosmos.esa.int/gaia), processed by the Gaia Data Processing and Analysis Consortium (DPAC, https://www.cosmos.esa.int/web/gaia/dpac/consortium). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the Gaia Multilateral Agreement. Cite Gaia Collaboration 2016, A&A 595, A1 (2016A&A...595A...1G) and Gaia Collaboration 2023, A&A 674, A1 (2023A&A...674A...1G).
+
+Where DR1's own files differ
+----------------------------
+
+DR1's sources.csv and manifest.json, and the licence statement bundled
+with them, were written before every upstream's terms were checked
+against what its producer states, and they record some of those terms
+differently. The files are not changed, because their checksums are what
+a citation of DR1 points at. The list above is what each producer
+states, and it is what governs the rows. DR1's files record instead:
+
+- Deep-sky distances: Cantat-Gaudin+ 2020, Harris 2010, Stanghellini+ 2008 (via VizieR): "CC BY 4.0 (VizieR); see each catalogue's own reference"
+- Gaia DR3 (sources brighter than G = 15): "CC BY-SA 3.0 IGO"
+- Gaia DR3 astrophysical parameters (GSP-Phot and FLAME): "CC BY-SA 3.0 IGO"
+- General Catalogue of Variable Stars (Samus+ 2017, via VizieR): "CC BY 4.0 (VizieR)"
+- JPL Planetary Satellite Data: "Public domain (NASA/JPL)"
+- JPL Small-Body Database: "Public domain (NASA/JPL)"
+- Minor Planet Center — discovery circumstances of the numbered minor planets: "IAU Minor Planet Center; free to use with attribution"
+- NASA Exoplanet Archive (Planetary Systems Composite Parameters): "Public domain (NASA)"
+- Washington Double Star Catalog (Mason+ 2001-, via VizieR): "CC BY 4.0 (VizieR)"
 
 Attribution
 -----------
 
 Cite the release. Citing the release does not discharge the upstream
 attribution: see https://spacecatalog.org/releases for both, with a worked example.
+
+The acknowledgement each producer requests, word for word where the
+producer publishes one:
+
+- Deep-sky distances: Cantat-Gaudin+ 2020, Harris 2010, Stanghellini+ 2008 (via VizieR): Hunt, E. L. & Reffert, S. 2024, A&A 686, A42 (2024A&A...686A..42H); Baumgardt, H. & Vasiliev, E. 2021, MNRAS 505, 5957 (2021MNRAS.505.5957B); Stanghellini, L., Shaw, R. A. & Villaver, E. 2008, ApJ 689, 194 (2008ApJ...689..194S) — its parsecs are the authors' unaltered values and its light years are SpaceCatalog's conversion; Cantat-Gaudin, T. et al. 2020, A&A 633, A99 (2020A&A...633A..99C); Harris, W. E. 1996, AJ 112, 1487 (1996AJ....112.1487H), revised 15 May 1997, VizieR VII/202 — "Please acknowledge the use of this catalog in any published work you derive from it." This research has made use of the VizieR catalogue access tool, CDS, Strasbourg, France (DOI: 10.26093/cds/vizier). The original description of the VizieR service was published in 2000, A&AS 143, 23.
+- GLADE+ (Galaxy List for the Advanced Detector Era): Dálya et al. 2022, MNRAS 514, 1403 (2022MNRAS.514.1403D) — "Please cite this paper when using GLADE+ data" — via VizieR VII/291. This research has made use of the VizieR catalogue access tool, CDS, Strasbourg, France (DOI: 10.26093/cds/vizier). The original description of the VizieR service was published in 2000, A&AS 143, 23.
+- GLADE+ (every row, as survey sources): Dálya et al. 2022, MNRAS 514, 1403 (2022MNRAS.514.1403D) — "Please cite this paper when using GLADE+ data" — via VizieR VII/291. This research has made use of the VizieR catalogue access tool, CDS, Strasbourg, France (DOI: 10.26093/cds/vizier). The original description of the VizieR service was published in 2000, A&AS 143, 23.
+- Gaia DR3 (sources brighter than G = 15): Credit: ESA/Gaia/DPAC. Licence: CC BY-NC 3.0 IGO, https://creativecommons.org/licenses/by-nc/3.0/igo/, non-commercial use only; commercial use needs ESA's prior authorisation. This work has made use of data from the European Space Agency (ESA) mission Gaia (https://www.cosmos.esa.int/gaia), processed by the Gaia Data Processing and Analysis Consortium (DPAC, https://www.cosmos.esa.int/web/gaia/dpac/consortium). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the Gaia Multilateral Agreement. Cite Gaia Collaboration 2016, A&A 595, A1 (2016A&A...595A...1G) and Gaia Collaboration 2023, A&A 674, A1 (2023A&A...674A...1G).
+- Gaia DR3 astrophysical parameters (GSP-Phot and FLAME): Credit: ESA/Gaia/DPAC. Licence: CC BY-NC 3.0 IGO, https://creativecommons.org/licenses/by-nc/3.0/igo/, non-commercial use only; commercial use needs ESA's prior authorisation. This work has made use of data from the European Space Agency (ESA) mission Gaia (https://www.cosmos.esa.int/gaia), processed by the Gaia Data Processing and Analysis Consortium (DPAC, https://www.cosmos.esa.int/web/gaia/dpac/consortium). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the Gaia Multilateral Agreement. Cite Gaia Collaboration 2016, A&A 595, A1 (2016A&A...595A...1G) and Gaia Collaboration 2023, A&A 674, A1 (2023A&A...674A...1G).
+- General Catalogue of Variable Stars (Samus+ 2017, via VizieR): Samus, N. N., Kazarovets, E. V., Durlevich, O. V., Kireeva, N. N. & Pastukhova, E. N. 2017, Astronomy Reports 61, 80 (2017ARep...61...80S), via VizieR B/gcvs. This research has made use of the VizieR catalogue access tool, CDS, Strasbourg, France (DOI: 10.26093/cds/vizier). The original description of the VizieR service was published in 2000, A&AS 143, 23.
+- HYG Database v4.1: HYG Database v4.1, Astronexus (github.com/astronexus/HYG-Database). Fields derived from it stay under CC BY-SA 4.0.
+- JPL Planetary Satellite Data: Solar System Dynamics. (Downloaded 2026, August 12). Planetary Satellite Mean Elements; Planetary Satellite Physical Parameters; Planetary Satellite Discovery Circumstances. https://ssd.jpl.nasa.gov
+- JPL Small-Body Database: Solar System Dynamics. (Downloaded 2026, August 17). Small-Body Database Query. https://ssd.jpl.nasa.gov
+- Minor Planet Center — discovery circumstances of the numbered minor planets: IAU Minor Planet Center, NumberedMPs.txt (https://www.minorplanetcenter.net/iau/lists/NumberedMPs.txt)
+- NASA Exoplanet Archive (Planetary Systems Composite Parameters): This research has made use of the NASA Exoplanet Archive, which is operated by the California Institute of Technology, under contract with the National Aeronautics and Space Administration under the Exoplanet Exploration Program. Cite Christiansen et al. (2025), Planetary Science Journal (doi:10.3847/PSJ/ade3c2), and the literature reference given with each value.
+- OpenNGC: OpenNGC, Mattia Verga (github.com/mattiaverga/OpenNGC). Fields derived from it stay under CC BY-SA 4.0.
+- SIMBAD spectral classifications: This research has made use of the SIMBAD database, operated at CDS, Strasbourg, France (Wenger et al. 2000, A&AS 143, 9; 2000A&AS..143....9W). The original paper for each spectral type and morphology is cited beside it. The SIMBAD-derived fields are made available under the Open Database License, and a database derived from them stays under the ODbL.
+- Washington Double Star Catalog (Mason+ 2001-, via VizieR): This research has made use of the Washington Double Star Catalog maintained at the U.S. Naval Observatory. Mason, B. D., Wycoff, G. L., Hartkopf, W. I., Douglass, G. G. & Worley, C. E. 2001, AJ 122, 3466 (2001AJ....122.3466M), via VizieR B/wds. This research has made use of the VizieR catalogue access tool, CDS, Strasbourg, France (DOI: 10.26093/cds/vizier). The original description of the VizieR service was published in 2000, A&AS 143, 23.
 
 The pipeline that produced these files is separate from the data and
 is licensed Apache-2.0.
