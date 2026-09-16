@@ -54,6 +54,14 @@ states, and it is what governs the rows. DR1's files record instead:
 - NASA Exoplanet Archive (Planetary Systems Composite Parameters): "Public domain (NASA)"
 - Washington Double Star Catalog (Mason+ 2001-, via VizieR): "CC BY 4.0 (VizieR)"
 
+DR1 names a catalogue by an edition it is not. The label is in the
+source name its manifest.json and sources.csv record, and in the
+distance method on the rows that catalogue measured. Those distances
+were read from the edition named below and are its values: only the
+label is wrong.
+
+- "Harris 2010" is Harris 1996, revised 15 May 1997 (1996AJ....112.1487H, VizieR VII/202).
+
 Attribution
 -----------
 
